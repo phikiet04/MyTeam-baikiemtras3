@@ -3,7 +3,7 @@
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
         @foreach ($quanlynhansu as $qlnhansu)
-        <h2 class="text-center mb-4">Tiêu đề : {{ $qlnhansu->team }}</h2>
+        <h2 class="text-center mb-4">Team: {{ $qlnhansu->team }}</h2>
             <div class="row row-cols-1 row-cols-md-4 justify-content-center">
                 <?php
                 $nhansuChunks = $qlnhansu->nhansu->chunk(4); // Chia danh sách thành viên thành các phần nhỏ có tối đa 4 thành viên mỗi phần
